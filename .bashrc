@@ -1,3 +1,5 @@
+export EDITOR=vim
+
 # git
 alias g='git'
 for a in $(git config --list | grep -E '^alias\.' | sed -E 's/^alias\.([^=]+)=.+$/\1/'); do

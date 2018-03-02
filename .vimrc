@@ -2,36 +2,39 @@
 " .vimrc
 " ----------------------------------------------------------------------
 " init.
-exec 'source ' . $HOME . '/.vim/etc/init.vim'
-
 let s:settingSourcePath = $HOME . '/.vim/etc'
-let s:importSettingSource = ImportGen(s:settingSourcePath)
-let plungins = [
-\ 'Shougo/dein.vim',
-\ 'Shougo/unite.vim',
-\ 'Shougo/unite-outline',
-\ 'Shougo/vimfiler.vim',
-\ 'Shougo/vimshell.vim',
-\ 'Shougo/neomru.vim',
-\ 'Shougo/neocomplete.vim',
-\ 'Shougo/neosnippet.vim',
-\ 'tpope/vim-markdown',
-\ 'tpope/vim-surround',
-\ 'fuenor/qfixgrep',
-\ 'mattn/emmet-vim',
-\ 'h1mesuke/vim-alignta',
-\ 'thinca/vim-quickrun',
-\ 'thinca/vim-qfreplace',
-\ 'itchyny/lightline.vim',
-\ 'editorconfig/editorconfig-vim',
-\ 'toyamarinyon/vim-swift',
-\ 'ujihisa/neoclojure.vim',
-\ 'posva/vim-vue',
-\ 'w0ng/vim-hybrid',
-\ 'tomasr/molokai',
-\ 'zanglg/nova.vim',
-\ 'hrloca/snippet',
-\ ]
+
+exec 'source ' . s:settingSourcePath . '/init.vim'
+
+let s:importSettingSource = ImportTo(s:settingSourcePath)
+let s:setPulgins = AddTo(plungins)
+
+let plungins = []
+
+call s:setPulgins('Shougo/dein.vim')
+call s:setPulgins('Shougo/unite.vim')
+call s:setPulgins('Shougo/unite-outline')
+call s:setPulgins('Shougo/vimfiler.vim')
+call s:setPulgins('Shougo/vimshell.vim')
+call s:setPulgins('Shougo/neomru.vim')
+call s:setPulgins('Shougo/neocomplete.vim')
+call s:setPulgins('Shougo/neosnippet.vim')
+call s:setPulgins('tpope/vim-markdown')
+call s:setPulgins('tpope/vim-surround')
+call s:setPulgins('fuenor/qfixgrep')
+call s:setPulgins('mattn/emmet-vim')
+call s:setPulgins('h1mesuke/vim-alignta')
+call s:setPulgins('thinca/vim-quickrun')
+call s:setPulgins('thinca/vim-qfreplace')
+call s:setPulgins('itchyny/lightline.vim')
+call s:setPulgins('editorconfig/editorconfig-vim')
+call s:setPulgins('toyamarinyon/vim-swift')
+call s:setPulgins('ujihisa/neoclojure.vim')
+call s:setPulgins('posva/vim-vue')
+call s:setPulgins('w0ng/vim-hybrid')
+call s:setPulgins('tomasr/molokai')
+call s:setPulgins('zanglg/nova.vim')
+call s:setPulgins('hrloca/snippet')
 
 call s:importSettingSource('/dein.vim')
 call s:importSettingSource('/encoding.vim')
