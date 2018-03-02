@@ -4,8 +4,8 @@
 " init.
 exec 'source ' . $HOME . '/.vim/etc/init.vim'
 
-let s:sourcePath = $HOME . '/.vim/etc'
-let s:ImportSource = Import(s:sourcePath)
+let s:settingSourcePath = $HOME . '/.vim/etc'
+let s:importSettingSource = ImportGen(s:settingSourcePath)
 let plungins = [
 \ 'Shougo/dein.vim',
 \ 'Shougo/unite.vim',
@@ -33,8 +33,8 @@ let plungins = [
 \ 'hrloca/snippet',
 \ ]
 
-call s:ImportSource('/dein.vim')
-call s:ImportSource('/encoding.vim')
+call s:importSettingSource('/dein.vim')
+call s:importSettingSource('/encoding.vim')
 
 filetype plugin indent on
 syntax on
@@ -143,18 +143,18 @@ set backspace=indent,eol,start
 
 " plugins settings.
 
-call s:ImportSource('/lightline.vim')
-call s:ImportSource('/neocomplete.vim')
-call s:ImportSource('/neosnippet.vim')
-call s:ImportSource('/unite.vim')
-call s:ImportSource('/vimproc.vim')
-call s:ImportSource('/vimshell.vim')
-call s:ImportSource('/vimfiler.vim')
-call s:ImportSource('/QFixGrep.vim')
-call s:ImportSource('/Qfreplace.vim')
-call s:ImportSource('/emmet.vim')
-call s:ImportSource('/vim-quickrun.vim')
-call s:ImportSource('/myscript.vim')
+call s:importSettingSource('/lightline.vim')
+call s:importSettingSource('/neocomplete.vim')
+call s:importSettingSource('/neosnippet.vim')
+call s:importSettingSource('/unite.vim')
+call s:importSettingSource('/vimproc.vim')
+call s:importSettingSource('/vimshell.vim')
+call s:importSettingSource('/vimfiler.vim')
+call s:importSettingSource('/QFixGrep.vim')
+call s:importSettingSource('/Qfreplace.vim')
+call s:importSettingSource('/emmet.vim')
+call s:importSettingSource('/vim-quickrun.vim')
+call s:importSettingSource('/myscript.vim')
 
 
 " settings.
