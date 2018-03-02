@@ -27,6 +27,7 @@ let g:plungins = [
 \ 'posva/vim-vue',
 \ 'w0ng/vim-hybrid',
 \ 'tomasr/molokai',
+\ 'zanglg/nova.vim',
 \ 'hrloca/snippet',
 \ ]
 
