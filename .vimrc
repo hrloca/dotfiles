@@ -6,10 +6,10 @@ let s:settingSourcePath = $HOME . '/.vim/etc'
 
 exec 'source ' . s:settingSourcePath . '/init.vim'
 
+let plungins = []
+
 let s:importSettingSource = ImportTo(s:settingSourcePath)
 let s:setPulgins = AddTo(plungins)
-
-let plungins = []
 
 call s:setPulgins('Shougo/dein.vim')
 call s:setPulgins('Shougo/unite.vim')
