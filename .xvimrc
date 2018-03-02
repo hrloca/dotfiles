@@ -1,0 +1,42 @@
+"
+" .vimrc
+" ----------------------------------------------------------------------
+
+
+" map.
+
+
+let mapleader = " "
+
+vmap < <gv
+vmap > >gv
+vmap v $
+nmap n nzz
+nmap N Nzz
+
+
+" system.
+
+" クリップボード利用
+set clipboard+=unnamed
+set clipboard=unnamed
+
+
+" tab and indent.
+
+
+set expandtab     " タブ入力を複数の空白入力に置き換える(noexpandtab)
+set autoindent    " 改行時に前の行のインデントを継続する(noautoindent)
+set smartindent   " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する(smartindent)
+
+
+" action.
+
+
+set splitbelow                 " 新しいウィンドウを下に開く(nosplitbelow)
+set splitright                 " 新しいウィンドウを右に開く(nosplitright)
+set textwidth=0                " 自動折り返ししない。(数値入れれば折り返す幅を指定できる)
+set backspace=indent,eol,start " バックスペースでインデントや改行を削除できるようにする
+
+
+" other.

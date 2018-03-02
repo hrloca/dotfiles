@@ -1,0 +1,25 @@
+[user]
+	name = hrloca
+	email = hr.loca@gmail.com
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[alias]
+	ci = commit
+	i = init
+	a = add
+	s = status --short --branch
+	b = branch
+	d = diff --color
+	dn = diff --color --name-only
+	m = merge
+	f = fetch
+	pl = pull
+	ps = push
+	ch = checkout
+	rs = reset
+	rsh = reset --hard
+	rss = reset --soft
+	rb = rebase
+	l = log --color --graph --decorate --date=short --pretty='format:%h% C(black)[%cd]%Creset %s - %an %d'

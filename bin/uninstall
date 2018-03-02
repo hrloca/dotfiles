@@ -1,0 +1,22 @@
+#!/bin/sh
+
+DIR=$(cd $(dirname $0); pwd)
+
+# shell
+rm ${HOME}/.bashrc
+rm ${HOME}/.bash_profile
+
+# git
+rm ${HOME}/.config/git/ignore
+rm ${HOME}/.gitconfig
+
+# vim
+#rm ${HOME}/.vim
+rm ${HOME}/.vimrc
+rm ${HOME}/.gvimrc
+rm ${HOME}/.vimshrc
+rm ${HOME}/.xvimrc
+
+# dir
+rm -d ${HOME}/.tmp
+

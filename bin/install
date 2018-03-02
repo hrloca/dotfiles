@@ -1,0 +1,58 @@
+#!/bin/sh
+
+# --------------------------------------------------
+# env
+# --------------------------------------------------
+
+BIN_DIR=$(cd $(dirname $0); pwd)
+ROOT_DIR=${BIN_DIR}/..
+CONFIG_DIR=${HOME}/.config
+
+
+# --------------------------------------------------
+# dir 
+# --------------------------------------------------
+
+mkdir -p ${HOME}/.config/git
+mkdir -p ${HOME}/.tmp
+mkdir -p ${ROOT_DIR}/opt
+
+
+# --------------------------------------------------
+# binary
+# --------------------------------------------------
+
+sh ${ROOT_DIR}/lib/install/dein ${ROOT_DIR}/opt/dein
+
+
+# --------------------------------------------------
+# dotfiles symbolic links
+# --------------------------------------------------
+
+# shell
+ln -sfn $ROOT_DIR/.bashrc ${HOME}/.bashrc
+ln -sfn $ROOT_DIR/.bash_profile ${HOME}/.bash_profile
+
+# git
+ln -sfn $ROOT_DIR/.gitconfig ${HOME}/.gitconfig
+ln -sfn $ROOT_DIR/.gitignore_global ${CONFIG_DIR}/git/ignore
+
+# vim
+ln -sfn $ROOT_DIR/.vim ${HOME}/.vim
+ln -sfn $ROOT_DIR/.vimrc ${HOME}/.vimrc
+ln -sfn $ROOT_DIR/.gvimrc ${HOME}/.gvimrc
+ln -sfn $ROOT_DIR/.bashrc ${HOME}/.vimshrc
+ln -sfn $ROOT_DIR/.xvimrc ${HOME}/.xvimrc
+
+# HOME /.config/peco/config.json
+
+
+echo "dotfiles setup done!"
+
+# etc
+# [ Google 日本語入力 ]
+# https://www.google.co.jp/ime/
+# [ slack ]
+# https://slack.com/downloads/osx
+# [ color schemes ]
+# https://github.com/mbadolato/iTerm2-Color-Schemes

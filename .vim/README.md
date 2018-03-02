@@ -1,0 +1,17 @@
+- filetype.vim ファイル名によるfiletypeの決定
+- scripts.vim ファイルの内容によるfiletypeの決定
+- autoload/ 自動的に読み込まれるスクリプト
+- colors/ カラースキーマの定義
+- compiler/ コンパイラ定義ファイル
+- doc/ ヘルプドキュメント
+- ftplugin/ ファイルタイプ別のプラグイン
+- ftdetect/ ファイルタイプを判別するファイル
+- indent/ インデントの設定
+- keymap/ キーマップの定義
+- lang/ メニューの翻訳(GVim)
+- menu.vim メニューの設定(GVim)
+- plugin/ プラグインスクリプト
+- print/ 印刷用
+- spell/ スペルチェック用
+- syntax/ 文法
+- tutor/ チュートリアル
