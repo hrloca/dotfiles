@@ -10,7 +10,6 @@ let plungins = []
 
 let s:importSettingSource = ImportTo(s:settingSourcePath)
 let s:setPulgins = AddTo(plungins)
-
 call s:setPulgins('Shougo/dein.vim')
 call s:setPulgins('Shougo/unite.vim')
 call s:setPulgins('Shougo/unite-outline')
@@ -28,13 +27,12 @@ call s:setPulgins('thinca/vim-quickrun')
 call s:setPulgins('thinca/vim-qfreplace')
 call s:setPulgins('itchyny/lightline.vim')
 call s:setPulgins('editorconfig/editorconfig-vim')
-call s:setPulgins('toyamarinyon/vim-swift')
 call s:setPulgins('ujihisa/neoclojure.vim')
-call s:setPulgins('posva/vim-vue')
 call s:setPulgins('w0ng/vim-hybrid')
 call s:setPulgins('tomasr/molokai')
 call s:setPulgins('zanglg/nova.vim')
 call s:setPulgins('hrloca/snippet')
+call s:setPulgins('sheerun/vim-polyglot')
 
 call s:importSettingSource('/dein.vim')
 call s:importSettingSource('/encoding.vim')

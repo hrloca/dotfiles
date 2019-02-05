@@ -21,3 +21,4 @@ alias o='ls /Applications | grep ".app" | peco | xargs -I{} open -a "/Applicatio
 alias apf='defaults write com.apple.finder AppleShowAllFiles -boolean true | killall Finder'
 alias hif='defaults delete com.apple.finder AppleShowAllFiles | killall Finder'
 
+eval "$(direnv hook bash)"
