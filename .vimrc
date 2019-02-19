@@ -2,14 +2,14 @@
 " .vimrc
 " ----------------------------------------------------------------------
 
-" resolve plugins.
+" init
 call import#direct($HOME . '/.vim/plugins.vim')
+filetype plugin indent on
+syntax on
 
 
 " color.
 
-filetype plugin indent on
-syntax on
 colorscheme hybrid
 set background=dark
 
@@ -97,18 +97,12 @@ set splitright
 set textwidth=0
 set backspace=indent,eol,start
 
-let g:deoplete#enable_at_startup = 1
-let g:python3_host_prog = expand('/usr/local/bin/python3')
 
 " settings.
 
-au BufWritePre *.go Fmt
-" gf(<c-w>f)した時/から始まるパスのファイルも開けるようにする
-au filetype html setlocal includeexpr=substitute(v:fname,'^\\/','','') | setlocal path+=./;/ 
 " 常に開いているファイルと同じディレクトリをカレントディレクトリにする
 au BufEnter * execute ":lcd ".expand("%:p:h")
 " v * で選択中の単語を検索
 vmap <silent> * "vy/\V<C-r>=substitute(escape(@v,'\/'),"\n",'\\n','g')<CR><CR>
 "対象があるときのみ自動でquickfixが開く
 au QuickfixCmdPost make,grep,grepadd,vimgrep if len(getqflist()) != 0 | copen | endif
-
