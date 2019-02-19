@@ -24,7 +24,6 @@ mkdir -p ${ROOT_DIR}/opt
 
 sh ${ROOT_DIR}/lib/install/dein ${ROOT_DIR}/opt/dein
 
-
 # --------------------------------------------------
 # dotfiles symbolic links
 # --------------------------------------------------
@@ -44,7 +43,20 @@ ln -sfn $ROOT_DIR/.gvimrc ${HOME}/.gvimrc
 ln -sfn $ROOT_DIR/.bashrc ${HOME}/.vimshrc
 ln -sfn $ROOT_DIR/.xvimrc ${HOME}/.xvimrc
 
+# nvim
+ln -sfn $ROOT_DIR/.vim ${HOME}/.config/nvim
+ln -sfn $ROOT_DIR/.vimrc ${HOME}/.config/nvim/init.vim
+
 # HOME /.config/peco/config.json
+
+# --------------------------------------------------
+# for macos
+# --------------------------------------------------
+
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# brew install python3
+# pip3 install neovim
+# brew install neovim
 
 
 echo "dotfiles setup done!"
