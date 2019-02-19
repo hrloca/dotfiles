@@ -2,54 +2,12 @@
 " .vimrc
 " ----------------------------------------------------------------------
 " init.
-let s:settingSourcePath = $HOME . '/.vim/etc'
-
-exec 'source ' . s:settingSourcePath . '/init.vim'
-
-let plungins = []
-
-let s:importSettingSource = ImportTo(s:settingSourcePath)
-let s:setPulgins = AddTo(plungins)
-call s:setPulgins('Shougo/dein.vim')
-call s:setPulgins('Shougo/unite.vim')
-call s:setPulgins('Shougo/unite-outline')
-call s:setPulgins('Shougo/neomru.vim')
-call s:setPulgins('Shougo/neosnippet.vim')
-call s:setPulgins('Shougo/vimfiler.vim')
-call s:setPulgins('Shougo/vimshell.vim')
-call s:setPulgins('tpope/vim-markdown')
-call s:setPulgins('tpope/vim-surround')
-call s:setPulgins('fuenor/qfixgrep')
-call s:setPulgins('mattn/emmet-vim')
-call s:setPulgins('h1mesuke/vim-alignta')
-call s:setPulgins('thinca/vim-quickrun')
-call s:setPulgins('thinca/vim-qfreplace')
-call s:setPulgins('itchyny/lightline.vim')
-call s:setPulgins('editorconfig/editorconfig-vim')
-call s:setPulgins('zanglg/nova.vim')
-call s:setPulgins('hrloca/snippet')
-call s:setPulgins('sheerun/vim-polyglot')
-call s:setPulgins('w0rp/ale')
-call s:setPulgins('w0ng/vim-hybrid')
-call s:setPulgins('tomasr/molokai')
-
-call s:setPulgins('Shougo/deoplete.nvim')
-
-if has('nvim')
-else
-  call s:setPulgins('roxma/nvim-yarp')
-  call s:setPulgins('roxma/vim-hug-neovim-rpc')
-endif
-
-call s:importSettingSource('/dein.vim')
-call s:importSettingSource('/encoding.vim')
-
-filetype plugin indent on
-syntax on
-
+call import#direct($HOME . '/.vim/plugins.vim')
 
 " color.
-
+"
+filetype plugin indent on
+syntax on
 colorscheme hybrid
 set background=dark
 
@@ -136,22 +94,6 @@ set splitbelow
 set splitright
 set textwidth=0
 set backspace=indent,eol,start
-
-
-" plugins settings.
-
-call s:importSettingSource('/lightline.vim')
-call s:importSettingSource('/unite.vim')
-call s:importSettingSource('/vimproc.vim')
-call s:importSettingSource('/vimshell.vim')
-call s:importSettingSource('/vimfiler.vim')
-call s:importSettingSource('/neosnippet.vim')
-call s:importSettingSource('/QFixGrep.vim')
-call s:importSettingSource('/Qfreplace.vim')
-call s:importSettingSource('/emmet.vim')
-call s:importSettingSource('/vim-quickrun.vim')
-call s:importSettingSource('/myscript.vim')
-call s:importSettingSource('/ale.vim')
 
 let g:deoplete#enable_at_startup = 1
 let g:python3_host_prog = expand('/usr/local/bin/python3')
