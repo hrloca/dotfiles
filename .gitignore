@@ -1,4 +1,5 @@
 opt/
 .vim/dein/
 .vim/bundle/snippet/
+.vim/init.vim
 .netrwhist

@@ -1,11 +1,13 @@
 "
 " .vimrc
 " ----------------------------------------------------------------------
-" init.
+
+" resolve plugins.
 call import#direct($HOME . '/.vim/plugins.vim')
 
+
 " color.
-"
+
 filetype plugin indent on
 syntax on
 colorscheme hybrid
