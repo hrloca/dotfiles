@@ -1,24 +1,17 @@
-call plugins#add('Shougo/dein.vim')
-call plugins#add('Shougo/unite.vim')
-call plugins#add('Shougo/neomru.vim')
-call plugins#add('Shougo/neosnippet.vim')
-call plugins#add('Shougo/vimfiler.vim')
-call plugins#add('Shougo/vimshell.vim')
-call plugins#add('tpope/vim-surround')
-call plugins#add('fuenor/qfixgrep')
-call plugins#add('mattn/emmet-vim')
-call plugins#add('h1mesuke/vim-alignta')
-call plugins#add('thinca/vim-quickrun')
-call plugins#add('thinca/vim-qfreplace')
-call plugins#add('itchyny/lightline.vim')
-call plugins#add('editorconfig/editorconfig-vim')
-call plugins#add('zanglg/nova.vim')
-call plugins#add('sheerun/vim-polyglot')
-call plugins#add('hrloca/snippet')
-call plugins#add('w0ng/vim-hybrid')
-call plugins#add('tomasr/molokai')
-call plugins#add('maxmellon/vim-jsx-pretty')
-" call plugins#add('w0rp/ale')
-call plugins#add('neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'})
-
-call plugins#resolve()
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-surround'
+Plug 'fuenor/qfixgrep'
+Plug 'h1mesuke/vim-alignta'
+Plug 'thinca/vim-quickrun'
+Plug 'thinca/vim-qfreplace'
+Plug 'editorconfig/editorconfig-vim'
+" require 
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/neomru.vim'
+Plug 'Shougo/vimfiler.vim'
+Plug 'w0ng/vim-hybrid'
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'zanglg/nova.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+call plug#end()
