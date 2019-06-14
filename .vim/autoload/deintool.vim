@@ -20,7 +20,11 @@ function deintool#resolve(items)
   if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
     for e in a:items
-      call dein#add(e)
+      if len(e) >= 2
+        call dein#add(e[0], e[1])
+      else
+        call dein#add(e[0])
+      end
     endfor
     call dein#add('Shougo/vimproc', { 'build' : 'make' })
     call dein#end()

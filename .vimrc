@@ -3,9 +3,8 @@
 " ----------------------------------------------------------------------
 
 " init
-call import#direct($HOME . '/.vim/plugins.vim')
-filetype plugin indent on
-syntax on
+
+call plugins#import()
 
 
 " color.
@@ -39,6 +38,7 @@ set notitle
 set shortmess+=I
 set wildmenu
 set list
+set signcolumn=yes
 
 set listchars=tab:.\ 
 set listchars+=trail:･
@@ -60,7 +60,6 @@ set undodir=~/.tmp
 set visualbell t_vb=
 set noerrorbells
 set history=500
-
 
 
 " search.
@@ -96,7 +95,7 @@ set splitbelow
 set splitright
 set textwidth=0
 set backspace=indent,eol,start
-
+set completeopt=noinsert
 
 " settings.
 
@@ -106,3 +105,5 @@ au BufEnter * execute ":lcd ".expand("%:p:h")
 vmap <silent> * "vy/\V<C-r>=substitute(escape(@v,'\/'),"\n",'\\n','g')<CR><CR>
 "対象があるときのみ自動でquickfixが開く
 au QuickfixCmdPost make,grep,grepadd,vimgrep if len(getqflist()) != 0 | copen | endif
+filetype plugin indent on
+syntax on
