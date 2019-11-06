@@ -15,18 +15,17 @@ CONFIG_DIR=${HOME}/.config
 
 mkdir -p ${HOME}/.config/git
 mkdir -p ${HOME}/.tmp
-mkdir -p ${ROOT_DIR}/opt
 
-
-# --------------------------------------------------
-# binary
-# --------------------------------------------------
-
-sh ${ROOT_DIR}/lib/install/dein ${ROOT_DIR}/opt/dein
+# CommandLineTools
+# xcode-select --install
+# Homebrew
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
 
 # --------------------------------------------------
 # dotfiles symbolic links
 # --------------------------------------------------
+
+ln -sfn $ROOT_DIR/.Brewfile ${HOME}/.Brewfile
 
 # shell
 ln -sfn $ROOT_DIR/.bashrc ${HOME}/.bashrc
@@ -52,22 +51,4 @@ ln -sfn $ROOT_DIR/.hyper.js ${HOME}/.hyper.js
 
 # HOME /.config/peco/config.json
 
-# --------------------------------------------------
-# for macos
-# --------------------------------------------------
-
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# brew install python3
-# pip3 install neovim
-# brew install neovim
-
-
 echo "dotfiles setup done!"
-
-# etc
-# [ Google 日本語入力 ]
-# https://www.google.co.jp/ime/
-# [ slack ]
-# https://slack.com/downloads/osx
-# [ color schemes ]
-# https://github.com/mbadolato/iTerm2-Color-Schemes

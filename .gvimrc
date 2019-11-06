@@ -13,25 +13,12 @@ nmap <silent> <leader>ss :<c-u>promptrepl<cr>
 
 " font.
 
-"RictyDiminished-Regular:h10.5
-"UbuntuMono-Regular:h10
-"ico:h11
-"SourceHanCodeJP-Regular:h9
-"SourceCodePro-Regular:h10.5
-"PanicSans:h10.5
-"
-set guifont=SourceCodePro-Regular:h10
-" defaults write org.vim.MacVim MMCellWidthMultiplier 1.0
+set guifont=Noto Mono:h11
 
 
 " color.
 
 " カラースキーム
-"colorscheme white
-"colorscheme br
-"colorscheme black
-"colorscheme Tomorrow
-"colorscheme Tomorrow-Night
 colorscheme hybrid
 " 無拡張子のカラー
 set syntax=html

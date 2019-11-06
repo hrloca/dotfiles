@@ -1,6 +1,7 @@
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
+// 
 
 module.exports = {
   config: {
@@ -12,7 +13,7 @@ module.exports = {
     fontSize: 11,
 
     // font family with optional fallbacks
-    fontFamily: 'Noto Suns Mono, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Noto Mono, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
