@@ -8,4 +8,4 @@
 "   let g:vimproc#dll_path = $VIM.'/vimfiles/bundle/vimproc.vim/lib/vimproc_win64.dll'
 " endif
 
-let g:vimproc#dll_path = $HOME.'/.vim/dein/repos/github.com/Shougo/vimproc/lib/vimproc_mac.so'
+let g:vimproc#dll_path = $HOME.'/.vim/plugged/vimproc.vim/lib/vimproc_mac.so'

@@ -47,6 +47,9 @@ ln -sfn $ROOT_DIR/.xvimrc ${HOME}/.xvimrc
 ln -sfn $ROOT_DIR/.vim ${HOME}/.config/nvim
 ln -sfn $ROOT_DIR/.vimrc ${HOME}/.config/nvim/init.vim
 
+# hyper
+ln -sfn $ROOT_DIR/.hyper.js ${HOME}/.hyper.js
+
 # HOME /.config/peco/config.json
 
 # --------------------------------------------------
