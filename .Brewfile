@@ -15,4 +15,4 @@ brew "direnv"
 brew "peco"
 brew "tmux"
 brew "watch"
-
+brew "jq"
