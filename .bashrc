@@ -8,7 +8,10 @@ done
 
 # docker
 alias d='docker'
-alias dcom='docker-compose'
+alias dcm='docker-compose'
+
+# k8s
+alias k='kubectl'
 
 # npm
 alias nr='npm run'
