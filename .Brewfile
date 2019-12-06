@@ -17,3 +17,5 @@ brew "tmux"
 brew "watch"
 brew "jq"
 brew "minikube"
+brew "stern"
+
