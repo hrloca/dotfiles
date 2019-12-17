@@ -8,7 +8,7 @@ done
 
 # docker
 alias d='docker'
-alias dcm='docker-compose'
+alias dcom='docker-compose'
 
 # k8s
 alias k='kubectl'

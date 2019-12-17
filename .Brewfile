@@ -18,4 +18,5 @@ brew "watch"
 brew "jq"
 brew "minikube"
 brew "stern"
-
+brew "kind"
+brew "kustomize"
