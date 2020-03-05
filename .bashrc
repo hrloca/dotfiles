@@ -14,6 +14,7 @@ alias dcom='docker-compose'
 
 # k8s
 alias k='kubectl'
+alias kc='kubectl config'
 
 # npm
 alias nr='npm run'
