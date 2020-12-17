@@ -13,3 +13,7 @@ export PATH
 export XDG_CONFIG_HOME=~/.config
 
 test -r ~/.bash_profile.local && source ~/.bash_profile.local
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+source ~/.cargo/env

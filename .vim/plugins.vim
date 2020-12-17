@@ -17,4 +17,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
 Plug 'hrloca/snippet'
 Plug 'Shougo/neosnippet.vim'
+Plug 'findango/vim-mdx'
+Plug 'jxnblk/vim-mdx-js'
 call plug#end()
