@@ -2,6 +2,7 @@
 " .vimrc
 " ----------------------------------------------------------------------
 
+
 " init
 
 call plugins#import()
@@ -111,3 +112,29 @@ syntax on
 " tsxファイルタイプ解決
 autocmd BufNewFile,BufRead *.tsx let b:tsx_ext_found = 1
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+
+" netrw
+let g:netrw_banner = 0
+let g:netrw_altv = 1
+let g:netrw_winsize = 0
+let g:netrw_keepdir = 0
+
+function! NetrwSplitOpen(splitCommand)
+  execute a:splitCommand | :e .
+endfunction
+
+noremap <c-e>e :call NetrwSplitOpen('')<cr>
+noremap <c-e><c-e> :call NetrwSplitOpen('')<cr>
+noremap <c-e>h :call NetrwSplitOpen(':leftabove vnew')<cr>
+noremap <c-e><c-h> :call NetrwSplitOpen(':leftabove vnew')<cr>
+noremap <c-e>l :call NetrwSplitOpen(':vnew')<cr>
+noremap <c-e><c-l> :call NetrwSplitOpen(':vnew')<cr>
+noremap <c-e>k :call NetrwSplitOpen(':leftabove new')<cr>
+noremap <c-e><c-k> :call NetrwSplitOpen(':leftabove new')<cr>
+noremap <c-e>j :call NetrwSplitOpen(':new')<cr>
+noremap <c-e><c-j> :call NetrwSplitOpen(':new')<cr>
+
+" python3 path
+if has('nvim')
+  let g:python3_host_prog = '/opt/homebrew/bin/python3'
+endif

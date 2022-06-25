@@ -3,10 +3,10 @@
   "suggest.preferCompleteThanJumpPlaceholder": true,
   "suggest.maxCompleteItemCount": 20,
   "coc.preferences.formatOnSaveFiletypes": [
+    "markdown",
+    "css",
     "json",
-    "rust"
-  ],
-  "eslint.filetypes": [
+    "rust",
     "javascript",
     "typescript",
     "typescriptreact",

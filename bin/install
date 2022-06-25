@@ -30,6 +30,10 @@ ln -sfn $ROOT_DIR/.Brewfile ${HOME}/.Brewfile
 # shell
 ln -sfn $ROOT_DIR/.bashrc ${HOME}/.bashrc
 ln -sfn $ROOT_DIR/.bash_profile ${HOME}/.bash_profile
+# zsh for macos
+ln -sfn $ROOT_DIR/.bash_profile ${HOME}/.zprofile
+ln -sfn $ROOT_DIR/.bashrc ${HOME}/.zshrc
+# ln -sfn $ROOT_DIR/.bashrc ${HOME}/.zlogin
 
 # git
 ln -sfn $ROOT_DIR/.gitconfig ${HOME}/.gitconfig

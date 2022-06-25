@@ -23,3 +23,5 @@
 	rss = reset --soft
 	rb = rebase
 	l = log --color --graph --decorate --date=short --pretty='format:%h% C(black)[%cd]%Creset %s - %an %d'
+[init]
+	defaultBranch = main
